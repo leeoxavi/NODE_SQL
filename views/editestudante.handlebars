@@ -1,0 +1,16 @@
+<h1>edite o estudante:</h1>
+
+<form action="/estudantes/updateestudante" method="POST" class="form">    
+    <input type="hidden" name="id" value="{{estudante.id}}"><!-- aqui recebemos um input, mas o hidden não exibe. -->
+   
+    <div class="form-control">
+        <label for="title">nome do estudante</label>
+        <input type="text" name="name" id="name" placeholder="Digite o nome do estudante" value="{{estudante.nome}}">
+    </div>
+
+    <div class="form-control">
+        <label for="serie">Série do estudante</label>
+        <input type="text" name="serie" id="serie" placeholder="Qual a série do Estudante" value="{{estudante.serie}}">
+    </div>
+    <input type="submit" value="editar">
+</form>

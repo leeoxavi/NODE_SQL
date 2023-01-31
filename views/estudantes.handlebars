@@ -1,0 +1,11 @@
+<h1>estudantes cadastrados</h1>
+
+<div class="estudantes-container">
+    <a href="/">adicionar estudantes</a>
+    {{#each estudantes}}
+    <div>
+        #{{this.id}} - <span class="bold"><a href="/estudantes/{{this.id}}">{{this.nome}}</a> </span>{{this.serie}}  serie!
+    </div>
+    {{/each}}
+
+</h1>
